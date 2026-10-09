@@ -164,42 +164,42 @@ h1 {
   border-radius: 12px;
   background: #000;
 }
+
 .marker.street-zone {
-    position: absolute;
-    z-index: 5;
-    border-radius: 0 !important;         
-    background: transparent;
-    border: none;
-    transition: background 0.2s;
+  position: absolute;
+  z-index: 5;
+  border-radius: 0 !important;         
+  background: transparent;
+  border: none;
+  transition: background 0.2s;
 }
 
 .marker.street-zone:hover {
-    background: rgba(255, 120, 0, 0.45) !important;
+  background: rgba(255, 120, 0, 0.45) !important;
 }
-
 
 .marker.square-zone {
-    border-radius: 0 !important;
+  border-radius: 0 !important;
 }
+
 .popup-media {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
 }
 
 .popup-media-item {
-    width: 100%;
-    max-height: 240px;
-    border-radius: 12px;
-    object-fit: contain;
-    background: #000;
+  width: 100%;
+  max-height: 240px;
+  border-radius: 12px;
+  object-fit: contain;
+  background: #000;
 }
 
 .popup-media-item video {
-    display: block;
+  display: block;
 }
-
 
 @media (max-width: 899px) {
   html, body {
@@ -227,8 +227,11 @@ h1 {
   .map-popup2 {
     width: calc(100vw - 24px) !important;
     max-width: none !important;
-    max-height: 70vh;
+    max-height: 44vh;
+    left: 12px !important;
+    transform: none !important;
   }
+
   .map-popup1 {
     top: 12px !important;
     bottom: auto !important;
@@ -238,5 +241,4 @@ h1 {
     bottom: 12px !important;
     top: auto !important;
   }
-
 }

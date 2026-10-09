@@ -309,7 +309,6 @@ function renderMarkers() {
         btn.style.height = spot.height + "%";
         btn.style.transform = `translate(-50%, -50%) rotate(${spot.rotate || 0}deg)`;
         btn.style.background = "transparent";
-        // btn.style.background = "rgba(255,0,0,0.35)"; // раскомментируй для отладки
         btn.style.border = "none";
         btn.style.padding = "0";
         btn.style.cursor = "pointer";
@@ -334,7 +333,7 @@ function fillPopup(popup, data, title) {
         el.title.textContent = title;
     }
 
-    // Текст
+
     if (el.summary1) el.summary1.textContent = data.summary1 || "Подробнее";
     if (el.text) el.text.textContent = data.text || "";
     if (el.details1) {
@@ -342,7 +341,7 @@ function fillPopup(popup, data, title) {
         el.details1.hidden = !data.text;
     }
 
-    // Медиа
+
     if (el.summary2) el.summary2.textContent = data.summary2 || "Медиа";
     clearMedia(el.media);
 
@@ -466,7 +465,6 @@ function highlightActiveMarker() {
     });
 }
 
-// Слушатели
 [popup1, popup2].forEach((popup) => {
     const el = getEls(popup);
 
@@ -503,5 +501,4 @@ window.addEventListener("resize", () => {
     if (activeId) placePopups(activeId);
 });
 
-// Запуск
 renderMarkers();

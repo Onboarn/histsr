@@ -26,6 +26,8 @@ h1 {
   display: inline-block;
   width: auto;
   max-width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .map-stage img {
@@ -34,6 +36,7 @@ h1 {
   height: auto;
   max-width: 100%;
   max-height: calc(100vh - 80px);
+  margin-left: 12px;
 }
 
 .hotspot-layer {

@@ -6,7 +6,6 @@ const hotspots = [
         width: 4,
         height: 4,
         rotate: -7,
-
         left: {
             title: "Вокзал",
             summary1: "История",

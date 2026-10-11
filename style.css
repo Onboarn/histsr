@@ -6,7 +6,6 @@ html, body {
 }
 
 .container {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,14 +19,18 @@ h1 {
   font-size: 22px;
   text-align: center;
 }
-
+.container .school{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  text-align: center; 
+}
 .map-stage {
   position: relative;
   display: inline-block;
   width: auto;
   max-width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .map-stage img {
@@ -36,7 +39,6 @@ h1 {
   height: auto;
   max-width: 100%;
   max-height: calc(100vh - 80px);
-  margin-left: 12px;
 }
 
 .hotspot-layer {
@@ -212,10 +214,29 @@ h1 {
   .container {
     height: auto;
     min-height: 100vh;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
     padding: 12px;
   }
-
+  .container .school img {
+    width: auto;          
+    max-width: 160px;     
+    height: auto;         
+    max-height: 120px;    
+    object-fit: contain;  
+    margin: 0 auto 12px;  
+    display: block;      
+  }
+  .container .school {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    text-align: center; 
+    width: 100%; 
+    box-sizing: border-box;
+  }
   .map-stage {
     display: block;
     width: 100%;
